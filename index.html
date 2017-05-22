@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		
+		
+	</head>
+	
+	<body>
+		<!-- Brand bar at top of page -->
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">
+				<img id="brand" src="assets/images/Nintendo-Logo.png">
+			  </a>
+			</div>
+		  </div>
+		</nav>
+		<!-- Hangman logo -->
+		<div class="container text-center">
+			<img id="hangman-logo" class="center" src="assets/images/hangman-logo.png">
+		</div>
+	
+		<!-- Game window -->
+		<div id="game-window" class="container text-center">
+			<div class="jumbotron">
+				<img id="portrait" class="img-responsive img-circle center-block" src="assets/images/unknown.png">
+				<p id="answerField" class="text-center"></p>
+				<p id="buttonRow"></p>
+				<p class="text-center message">Guess the Nintendo character!</p>
+				<p><span id="guessesRemaining"></span></p>
+				<div id="buttons">
+				</div>
+				<button id="newGame" type="button" class="btn btn-success">New Game</button>
+			 </div>
+		</div>
+		
+		<audio>
+			<source id="correct" src="assets/sounds/correct.wav" type="audio/wav">
+			<source id="incorrect" src="assets/sounds/incorrect.wav" type="audio/wav">
+			<source id="song" src="assets/sounds/song.mp3" type="audio/mp3">
+			<source id="victory" src="assets/sounds/victory.wav" type="audio/wav">
+			<source id="gameOver" src="assets/sounds/game_over.wav" type="audio/wav">
+		</audio>
+	
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="assets/js/game.js"></script>
+	</body>
+	
+</html>
